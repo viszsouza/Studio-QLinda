@@ -1,0 +1,241 @@
+@import url("base.css");
+
+header{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--rosa);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a{
+    font-weight: 500;
+    color: var(--branco);
+    text-shadow: var(--shadow);
+    transition: 200ms;
+}
+
+nav a:hover{
+    transform: scale(1.1);
+}
+
+.agendamento{
+    background-color: var(--branco);
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+    box-shadow: var(--shadow);
+    transition: 200ms;
+}
+
+.agendamento:hover{
+    transform: scale(1.1);
+}
+
+.agendamento button{
+    border: none;
+    color: var(--rosa-dark);
+    text-shadow: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.inicio{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    gap: 10px;
+    color: var(--branco);
+}
+
+.inicio h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.inicio p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn-inicio{
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 200ms;
+}
+
+.btn-inicio button{
+    font-weight: bold;
+    transition: 200ms;
+}
+
+.btn-inicio button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.sobre-nos{
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,175,204,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px 40px 20px;
+}
+
+.imagem-sn img{
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 200ms;
+}
+
+.imagem-sn img:hover{
+    transform: scale(1.04);
+    opacity: 80%;
+}
+
+.text-sn{
+    width: 400px;
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+}
+
+.text-sn h1{
+    margin-bottom: 20px;
+    color: var(--rosa);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.p-text{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.p-negrito{
+    font-weight: 600;
+}
+
+.btn-inicio button{
+    background-color: var(--branco);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    color: var(--rosa-dark);
+    box-shadow: var(--shadow);
+}
+
+main{
+    padding: 40px 20px 40px 20px;
+    background-color: var(--rosa);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.serviço-bg{
+    max-width: 820px;
+    width: 100%;
+    background-color: var(--branco);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+}
+
+.serviço{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.img-sv img{
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px;
+    box-shadow: var(--shadow);
+    transition: 200ms;
+}
+
+.img-sv img:hover{
+    transform: scale(1.1) rotate(10deg);
+}
+
+.text-sv h3{
+    color: var(--rosa-dark);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.text-sv p{
+    color: var(--rosa);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.text-sv button{
+    background-color: var(--rosa-dark);
+    color: var(--branco);
+    border: none;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.text-sv button:hover{
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px){
+    nav{
+        flex-direction: column;
+    }
+
+    .sobre-nos{
+        flex-direction: column;
+    }
+
+    .imagem-sn img{
+        width: 100%;
+        height: 500px;
+    }
+
+    .text-sn{
+        width: 100%;
+    }
+
+    .text-sn h1{
+        color: var(--rosa-dark);
+    }
+
+}
