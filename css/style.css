@@ -188,7 +188,6 @@ main{
 }
 
 .text-sv h3{
-    text-align: center;
     color: var(--rosa-dark);
     font-weight: bold;
     font-size: 30px;
