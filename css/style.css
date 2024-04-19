@@ -194,6 +194,7 @@ main{
 }
 
 .text-sv p{
+    width: 70%;
     color: var(--rosa);
     font-weight: 500;
     font-size: 20px;
@@ -213,6 +214,21 @@ main{
 
 .text-sv button:hover{
     transform: scale(1.1);
+}
+
+.localização iframe{
+    width: 100%;
+    height: 300px;
+}
+
+#copyright a{
+    color: #ff3131;
+    transition: 200ms;
+}
+
+#copyright a:hover{
+    text-decoration: underline;
+    color: #ff914d;
 }
 
 
@@ -238,4 +254,7 @@ main{
         color: var(--rosa-dark);
     }
 
+    .serviço{
+        flex-direction: column;
+    }
 }
