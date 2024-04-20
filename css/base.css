@@ -19,6 +19,10 @@
     background-color: transparent;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*Footer*/
 
 footer {
